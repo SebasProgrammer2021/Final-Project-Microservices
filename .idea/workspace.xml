@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2110e672-3d05-4458-aacb-0de49a3a99dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka-server/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka-server/src/main/java/co/edu/uniquindio/inventario/EurekaServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/co/edu/uniquindio/inventario/GatewayServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/incentario/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/co/edu/uniquindio/inventario/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +47,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Universidad/Semestre X/Microservicios/Proyecto/Final-Project-Microservices/Gateway/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,7 +64,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices\Gateway\src\main\resources" />
+      <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices\Eureka-server\src\main\resources" />
+      <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices\Eureka-server\src\main\java\co\edu\uniquindio\incentario\EurekaServiceApplication" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayServiceApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.Main" />
       <module name="Microservices-Final-Project.main" />
@@ -76,10 +107,39 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
+    </configuration>
+    <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Microservices-Final-Project.Eureka-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.inventario.EurekaServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.uniquindio.inventario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Microservices-Final-Project.Gateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.inventario.GatewayServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.uniquindio.inventario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayServiceApplication" />
+        <item itemvalue="Spring Boot.EurekaServiceApplication" />
         <item itemvalue="Gradle.Microservices-Final-Project [test]" />
         <item itemvalue="Application.Main" />
       </list>
@@ -94,6 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682379126816</updated>
       <workItem from="1682379128125" duration="883000" />
+      <workItem from="1684034877104" duration="3058000" />
     </task>
     <servers />
   </component>

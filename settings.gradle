@@ -1,2 +1,8 @@
 rootProject.name = 'Microservices-Final-Project'
+include 'Eureka-server'
+include 'Eureka-server'
+include 'Eureka-server'
+include 'Eureka-server'
+include 'Gateway'
+include 'inventory'
 

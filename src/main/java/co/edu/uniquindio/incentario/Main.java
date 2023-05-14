@@ -1,4 +1,4 @@
-package co.edu.uniquindio;
+package co.edu.uniquindio.incentario;
 
 public class Main {
     public static void main(String[] args) {
