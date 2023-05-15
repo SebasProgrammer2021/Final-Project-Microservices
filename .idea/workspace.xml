@@ -33,6 +33,16 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -40,7 +50,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2OtTwjlyOCUX3LCo5HcvdtdR0WQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,17 +67,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/Universidad/Semestre X/Microservicios/Proyecto/Final-Project-Microservices/Gateway/src/main/resources",
+    "last_opened_file_path": "C:/Users/Acer/Documents/estudio/Microservices-Final-Project/Inventory/src/main/java/co/edu/uniquindio/inventory",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "6a8a0d4cebc51074df3496700dc4f3dd",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Documents\estudio\Microservices-Final-Project\Inventory\src\main\java\co\edu\uniquindio\inventory" />
       <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices\Gateway\src\main\resources" />
       <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices\Eureka-server\src\main\resources" />
       <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices" />
@@ -74,16 +88,17 @@
       <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices\Eureka-server\src\main\java\co\edu\uniquindio\incentario\EurekaServiceApplication" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayServiceApplication">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.Main" />
-      <module name="Microservices-Final-Project.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.edu.uniquindio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.InventoryApp">
+    <configuration name="InventoryApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.inventory.InventoryApp" />
+      <module name="Microservices-Final-Project.inventory.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,7 +122,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -136,12 +150,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InventoryApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Microservices-Final-Project.inventory.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.inventory.InventoryApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.InventoryApp" />
+        <item itemvalue="Application.InventoryApp" />
         <item itemvalue="Spring Boot.GatewayServiceApplication" />
         <item itemvalue="Spring Boot.EurekaServiceApplication" />
         <item itemvalue="Gradle.Microservices-Final-Project [test]" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
