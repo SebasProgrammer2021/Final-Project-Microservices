@@ -60,6 +60,7 @@ public class Utils {
 
     public Inventory getInventory(String codigo) {
         Inventory inventory = inventoryRepo.findFirstByEstadoAndCodigo(1, codigo);
+        System.out.println("Prueba");
 
         if (inventory == null) {
             throw new InventoryNotFoundException("El inventario " + codigo + " no existe.");
