@@ -1,8 +1,10 @@
 package co.edu.uniquindio.inventory.controller;
 
 import co.edu.uniquindio.inventory.dto.EntryDTO;
+import co.edu.uniquindio.inventory.dto.ExitDTO;
 import co.edu.uniquindio.inventory.dto.InventoryDTO;
 import co.edu.uniquindio.inventory.dto.Response;
+import co.edu.uniquindio.inventory.model.Exits;
 import co.edu.uniquindio.inventory.services.InventoryService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -34,11 +36,11 @@ public class InventoryController {
         return ResponseEntity.status(HttpStatus.OK).body(new Response<>("Inventarios encontrados", inventoryService.findAll()));
     }
 
-//    @PutMapping
-//    public ResponseEntity<Response<InventoryDTO>> update(@RequestBody InventoryDTO inventory) {
-//        return ResponseEntity.status(HttpStatus.OK)
-//                .body(new Response<>("El inventario se modificó exitosamente", inventoryService.update(inventory)));
-//    }
+    @PutMapping
+    public ResponseEntity<Response<Exits>> update(@RequestBody ExitDTO inventory) {
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(new Response<>("El inventario se modificó exitosamente", inventoryService.update(inventory)));
+    }
 
 
     @DeleteMapping("/{inventoryCode}")

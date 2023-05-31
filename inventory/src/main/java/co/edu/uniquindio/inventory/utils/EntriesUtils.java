@@ -1,8 +1,10 @@
 package co.edu.uniquindio.inventory.utils;
 
 import co.edu.uniquindio.inventory.dto.EntryDTO;
+import co.edu.uniquindio.inventory.dto.ExitDTO;
 import co.edu.uniquindio.inventory.dto.InventoryDTO;
 import co.edu.uniquindio.inventory.model.Entries;
+import co.edu.uniquindio.inventory.model.Exits;
 import co.edu.uniquindio.inventory.model.Inventory;
 import co.edu.uniquindio.inventory.process.Process;
 import co.edu.uniquindio.inventory.repo.EntriesRepo;
@@ -52,6 +54,14 @@ public class EntriesUtils {
                 .salidas(inventory.salidas())
                 .fecha_salida(inventory.fecha_salida())
                 .total(inventory.total())
+                .build();
+    }
+
+    public Exits setupExitDTOToExit(ExitDTO exitDTO) {
+        return Exits.builder()
+                .codigo(exitDTO.codigo())
+                .salidas(exitDTO.salidas())
+                .fecha_salida(LocalDate.now())
                 .build();
     }
 
