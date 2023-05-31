@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2110e672-3d05-4458-aacb-0de49a3a99dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,30 +24,9 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-<<<<<<< HEAD
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Microservices-Final-Project" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-=======
         <projects_view />
->>>>>>> 8ab3f5652ac5584fcb09467fd821a8920eb72654
       </state>
     </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +42,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -76,38 +52,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Universidad/Semestre X/Microservicios/Biblioteca Londo/Biblioteca-microservices-arrangement&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Documents/estudio/Microservices-Final-Project/Inventory/src/main/java/co/edu/uniquindio/inventory&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9159f9de2e7389c8a98bb5aca2cbf228&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6a8a0d4cebc51074df3496700dc4f3dd&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-<<<<<<< HEAD
-    "last_opened_file_path": "D:/Universidad/Semestre X/Microservicios/Proyecto/Final-Project-Microservices",
-=======
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/Universidad/Semestre X/Microservicios/Biblioteca Londo/Biblioteca-microservices-arrangement",
->>>>>>> 8ab3f5652ac5584fcb09467fd821a8920eb72654
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "ae091f488729176f16b9f906607e5438",
-    "vue.rearranger.settings.migration": "true"
->>>>>>> 01328b731e0927a342199ecf1877ca6b2a0f8119
   }
 }</component>
   <component name="RecentsManager">
@@ -119,10 +71,6 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Universidad\Semestre X\Microservicios\Proyecto\Final-Project-Microservices\Eureka-server\src\main\java\co\edu\uniquindio\incentario\EurekaServiceApplication" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="co.edu.uniquindio.inventory.dto" />
-      <recent name="co.edu.uniquindio.inventory.repo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,6 +107,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -197,9 +146,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.InventoryApp" />
+        <item itemvalue="Application.InventoryApp" />
         <item itemvalue="Spring Boot.GatewayServiceApplication" />
         <item itemvalue="Spring Boot.EurekaServiceApplication" />
-        <item itemvalue="Application.InventoryApp" />
         <item itemvalue="Gradle.Microservices-Final-Project [test]" />
       </list>
     </recent_temporary>
@@ -213,16 +162,15 @@
       <option name="presentableId" value="Default" />
       <updated>1682379126816</updated>
       <workItem from="1682379128125" duration="883000" />
-<<<<<<< HEAD
-      <workItem from="1684126258409" duration="15000" />
-=======
       <workItem from="1684034877104" duration="3058000" />
-      <workItem from="1684125515905" duration="911000" />
->>>>>>> 8ab3f5652ac5584fcb09467fd821a8920eb72654
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
