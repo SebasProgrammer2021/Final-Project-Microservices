@@ -5,6 +5,7 @@ import co.edu.uniquindio.inventory.dto.InventoryDTO;
 import co.edu.uniquindio.inventory.model.Entries;
 import co.edu.uniquindio.inventory.model.Inventory;
 import co.edu.uniquindio.inventory.process.Process;
+import co.edu.uniquindio.inventory.repo.EntriesRepo;
 import co.edu.uniquindio.inventory.repo.InventoryRepo;
 import co.edu.uniquindio.inventory.services.excepciones.InventoryNotFoundException;
 import lombok.AllArgsConstructor;
@@ -18,6 +19,7 @@ import java.util.List;
 public class EntriesUtils {
     private final InventoryRepo inventoryRepo;
     private final Process inventoryProcess;
+    private final EntriesRepo entriesRepo;
 
     public Entries setupInventoryToSave(InventoryDTO inventory) {
         return Entries.builder()
@@ -71,6 +73,16 @@ public class EntriesUtils {
         }
 
         return inventory;
+    }
+
+    public Entries getEntry(String codigo) {
+        Entries entry = entriesRepo.findFirstByEstadoAndCodigo(1, codigo);
+
+        if (entry == null) {
+            throw new InventoryNotFoundException("El inventario " + codigo + " no existe.");
+        }
+
+        return entry;
     }
 
     public List<EntryDTO> setListInventoryDTO(List<Entries> inventoryList) {

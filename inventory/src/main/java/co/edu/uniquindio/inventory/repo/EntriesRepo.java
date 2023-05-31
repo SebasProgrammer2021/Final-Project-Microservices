@@ -11,6 +11,8 @@ import java.util.Optional;
 @Repository
 public interface EntriesRepo extends MongoRepository<Entries, String> {
     List<Entries> findByEstado(int estado);
-
+    List<Entries> findAllByCodigo(String codigo);
+    Entries findFirstByEstadoAndCodigo(int estado, String codigo);
     Optional<Entries> findTopByEstadoAndCodigoOrderByIdDesc(int estado, String codigo);
+    List<Optional<Entries>> findAllByEstado(int estado);
 }

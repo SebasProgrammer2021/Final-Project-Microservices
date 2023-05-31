@@ -48,26 +48,26 @@ public class InventoryService {
 //    }
 
     public void deleteById(String inventoryCode) {
-        entriesUtils.getInventory(inventoryCode);
-        List<Inventory> inventoryList = inventoryRepo.findAllByCodigo(inventoryCode);
+        entriesUtils.getEntry(inventoryCode);
+        List<Entries> entriesList = entriesRepo.findAllByCodigo(inventoryCode);
 
-        for (Inventory inventory : inventoryList) {
-            inventory.setEstado(0);
-            inventoryRepo.save(inventory);
+        for (Entries entry : entriesList) {
+            entry.setEstado(0);
+            entriesRepo.save(entry);
         }
     }
 
     public void deleteAll() {
-        List<Optional<Inventory>> inventoryList = inventoryRepo.findAllByEstado(1);
-        if (inventoryList.isEmpty()) {
+        List<Optional<Entries>> entriesList = entriesRepo.findAllByEstado(1);
+        if (entriesList.isEmpty()) {
             throw new InventoryNotFoundException("No hay inventarios para eliminar");
         }
 
-        for (Optional<Inventory> inventory : inventoryList) {
-            if (inventory.isPresent()) {
-                Inventory inventoryRes = inventory.get();
-                inventoryRes.setEstado(0);
-                inventoryRepo.save(inventoryRes);
+        for (Optional<Entries> entry : entriesList) {
+            if (entry.isPresent()) {
+                Entries entryRes = entry.get();
+                entryRes.setEstado(0);
+                entriesRepo.save(entryRes);
             }
         }
     }
