@@ -1,5 +1,6 @@
 package co.edu.uniquindio.inventory.controller;
 
+import co.edu.uniquindio.inventory.dto.EntryDTO;
 import co.edu.uniquindio.inventory.dto.InventoryDTO;
 import co.edu.uniquindio.inventory.dto.Response;
 import co.edu.uniquindio.inventory.services.InventoryService;
@@ -18,26 +19,26 @@ public class InventoryController {
     private final InventoryService inventoryService;
 
     @PostMapping
-    public ResponseEntity<Response<InventoryDTO>> save(@RequestBody InventoryDTO productInventory) {
+    public ResponseEntity<Response<EntryDTO>> save(@RequestBody InventoryDTO productInventory) {
         return ResponseEntity.status(HttpStatus.CREATED).body(new Response<>("Inventario creado exitosamente", inventoryService.save(productInventory)));
     }
 
 
     @GetMapping("/{inventoryCode}")
-    public ResponseEntity<Response<InventoryDTO>> findById(@PathVariable String inventoryCode) {
+    public ResponseEntity<Response<EntryDTO>> findById(@PathVariable String inventoryCode) {
         return ResponseEntity.status(HttpStatus.OK).body(new Response<>("Inventario encontrado", inventoryService.findById(inventoryCode)));
     }
 
     @GetMapping
-    public ResponseEntity<Response<List<InventoryDTO>>> findAll() {
+    public ResponseEntity<Response<List<EntryDTO>>> findAll() {
         return ResponseEntity.status(HttpStatus.OK).body(new Response<>("Inventarios encontrados", inventoryService.findAll()));
     }
 
-    @PutMapping
-    public ResponseEntity<Response<InventoryDTO>> update(@RequestBody InventoryDTO inventory) {
-        return ResponseEntity.status(HttpStatus.OK)
-                .body(new Response<>("El inventario se modificó exitosamente", inventoryService.update(inventory)));
-    }
+//    @PutMapping
+//    public ResponseEntity<Response<InventoryDTO>> update(@RequestBody InventoryDTO inventory) {
+//        return ResponseEntity.status(HttpStatus.OK)
+//                .body(new Response<>("El inventario se modificó exitosamente", inventoryService.update(inventory)));
+//    }
 
 
     @DeleteMapping("/{inventoryCode}")

@@ -1,6 +1,8 @@
 package co.edu.uniquindio.inventory.utils;
 
+import co.edu.uniquindio.inventory.dto.EntryDTO;
 import co.edu.uniquindio.inventory.dto.InventoryDTO;
+import co.edu.uniquindio.inventory.model.Entries;
 import co.edu.uniquindio.inventory.model.Inventory;
 import co.edu.uniquindio.inventory.process.Process;
 import co.edu.uniquindio.inventory.repo.InventoryRepo;
@@ -13,17 +15,16 @@ import java.util.List;
 
 @Component
 @AllArgsConstructor
-public class Utils {
+public class EntriesUtils {
     private final InventoryRepo inventoryRepo;
     private final Process inventoryProcess;
 
-    public Inventory setupInventoryToSave(InventoryDTO inventory) {
-        return Inventory.builder()
+    public Entries setupInventoryToSave(InventoryDTO inventory) {
+        return Entries.builder()
                 .codigo(inventory.codigo().trim())
                 .nombre(inventory.nombre())
                 .entradas(inventory.entradas())
                 .fecha_entrada(LocalDate.now())
-                .total(inventory.entradas())
                 .estado(1).build();
     }
 
@@ -52,10 +53,14 @@ public class Utils {
                 .build();
     }
 
-    public InventoryDTO transformInventoryToInventoryResponse(Inventory inventory) {
-        return new InventoryDTO(inventory.getCodigo(), inventory.getNombre(),
-                inventory.getEntradas(), inventory.getFecha_entrada(),
-                inventory.getSalidas(), inventory.getFecha_salida(), inventory.getTotal());
+    public EntryDTO transformInventoryToInventoryResponse(Entries entries) {
+        return new EntryDTO(entries.getCodigo(), entries.getNombre(),
+                entries.getEntradas(), entries.getFecha_entrada());
+    }
+
+    public EntryDTO transformEntryToEntryResponse(Entries inventory) {
+        return new EntryDTO(inventory.getCodigo(), inventory.getNombre(),
+                inventory.getEntradas(), inventory.getFecha_entrada());
     }
 
     public Inventory getInventory(String codigo) {
@@ -69,7 +74,7 @@ public class Utils {
         return inventory;
     }
 
-    public List<InventoryDTO> setListInventoryDTO(List<Inventory> inventoryList) {
+    public List<EntryDTO> setListInventoryDTO(List<Entries> inventoryList) {
         return inventoryList.stream().map(this::transformInventoryToInventoryResponse).toList();
     }
 
