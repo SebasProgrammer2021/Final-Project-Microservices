@@ -1,10 +1,13 @@
 package co.edu.uniquindio.inventory.utils;
 
 import co.edu.uniquindio.inventory.dto.EntryDTO;
+import co.edu.uniquindio.inventory.dto.ExitDTO;
 import co.edu.uniquindio.inventory.dto.InventoryDTO;
 import co.edu.uniquindio.inventory.model.Entries;
+import co.edu.uniquindio.inventory.model.Exits;
 import co.edu.uniquindio.inventory.model.Inventory;
 import co.edu.uniquindio.inventory.process.Process;
+import co.edu.uniquindio.inventory.repo.EntriesRepo;
 import co.edu.uniquindio.inventory.repo.InventoryRepo;
 import co.edu.uniquindio.inventory.services.excepciones.InventoryNotFoundException;
 import lombok.AllArgsConstructor;
@@ -18,6 +21,7 @@ import java.util.List;
 public class EntriesUtils {
     private final InventoryRepo inventoryRepo;
     private final Process inventoryProcess;
+    private final EntriesRepo entriesRepo;
 
     public Entries setupInventoryToSave(InventoryDTO inventory) {
         return Entries.builder()
@@ -53,6 +57,14 @@ public class EntriesUtils {
                 .build();
     }
 
+    public Exits setupExitDTOToExit(ExitDTO exitDTO) {
+        return Exits.builder()
+                .codigo(exitDTO.codigo())
+                .salidas(exitDTO.salidas())
+                .fecha_salida(LocalDate.now())
+                .build();
+    }
+
     public EntryDTO transformInventoryToInventoryResponse(Entries entries) {
         return new EntryDTO(entries.getCodigo(), entries.getNombre(),
                 entries.getEntradas(), entries.getFecha_entrada());
@@ -72,6 +84,16 @@ public class EntriesUtils {
         }
 
         return inventory;
+    }
+
+    public Entries getEntry(String codigo) {
+        Entries entry = entriesRepo.findFirstByEstadoAndCodigo(1, codigo);
+
+        if (entry == null) {
+            throw new InventoryNotFoundException("El inventario " + codigo + " no existe.");
+        }
+
+        return entry;
     }
 
     public List<EntryDTO> setListInventoryDTO(List<Entries> inventoryList) {
